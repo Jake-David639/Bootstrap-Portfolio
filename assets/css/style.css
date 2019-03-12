@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+}
 body {
     padding: 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -7,9 +14,14 @@ body {
     background-image:url(../images/dark-honeycomb.png);
     /* Background pattern from Toptal Subtle Patterns */
   }
-  
+
+p {
+    line-height: 150%;
+}
+
 header {
-    align-content: center;
+    width: 100%;
+    /* align-content: center; */
     background: #ffffff;
     margin-bottom: 20px;
     border-bottom: 4px solid #cccccc;
@@ -41,15 +53,12 @@ h2 {
 
 .container {
     margin-bottom: 100px;
-    width: 960px;
     border: 2px solid #dddddd;
     background: #ffffff;
 }
 
 .navBar {
-    display: fixed;
     justify-content: space-between;
-    width: 960px;
     margin: 0 auto;
 }
 
@@ -82,6 +91,11 @@ footer {
     background: #4aaaa5;
 }
 
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
 .portfolio-title {
     text-align: center;
     background: #4aaaa5;
@@ -105,22 +119,6 @@ footer {
     margin-top: 5px;
 }
 
-p {
-    line-height: 150%;
-}
 
-@media screen and (max-width: 960px) {
-    header, .navBar {
-        width: 100%;
-    }
-}
-/* Small devices 640px and down */
-@media screen and (min-width: 640px) {
-    .container {
-        width: 100%;
-    }
 
-    #bio-image {
-        size: 150%;
-    }
-} 
+
